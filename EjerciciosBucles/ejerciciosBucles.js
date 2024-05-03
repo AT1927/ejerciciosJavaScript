@@ -1,7 +1,31 @@
 //Presentado por: Edgar Andres Torres Muñoz
 //ENTREGA EJERCICIOS DE BUCLES - JAVA SCRIPT
 //----------------------------------------------------------------------------------------------------
+//Ejercicio #1:
+console.log("°**|Ej#1. TABLA DE MULTIPLICAR|**°");
+var numero = 0;
+var resultado = 0;
+numero = prompt("Cual es su numero: ");
 
+for (i = 1; i <= 10; i++) {
+    resultado = numero * i;
+    console.log("A continuación la Tabla del " + numero);
+    console.log(numero + " x " + i + " = " + resultado);
+}
+//----------------------------------------------------------------------------
+//Ejercicio #2:
+console.log("°**|Ej#2. NUMEROS ACUMULADO|**°");
+var numero;
+var acumulado = 0;
+
+if(numero === 0){
+    console.log("Acumulado: "+acumulado);
+    console.log("El programa a terminado!")
+} else {
+    acumulado += numero;
+    console.log("Acumulado actual: "+acumulado);
+}
+//----------------------------------------------------------------------------
 //Ejercicio #3:
 console.log("°**|Ej#3. ADIVINA EL NUMERO|**°");
 var numero = 0;
@@ -128,12 +152,32 @@ arrayFamilia.forEach((miembro) => {
 
 //Ejercicio #9:
 console.log("°**|Ej#9. ELEMENTOS ARRAY|**°");
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 !== 0) {
+        console.log(numeros[i]);
+    }
+}
 //----------------------------------------------------------------------------
 
 //Ejercicio #10:
 console.log("°**|Ej#10. SUMATORIA PARES/IMPARES|**°");
+var sumaImpares = 0;
+var sumaPares = 0;
+while (true) {
+    const numero = parseInt(prompt("Ingresa un número (0: Salir):"));
 
+    if (numero === 0) {
+        break;
+    }
+
+    if (numero % 2 === 0) {
+        sumaPares += numero;
+    } else {
+        sumaImpares += numero;
+    }
+}
 //----------------------------------------------------------------------------
 
 //Ejercicio #11:
