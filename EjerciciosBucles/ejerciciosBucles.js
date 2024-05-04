@@ -177,6 +177,8 @@ while (true) {
     } else {
         sumaImpares += numero;
     }
+    console.log("Sumatoria PARES: "+sumaPares);
+    console.log("Sumatoria IMPARES: "+sumaImpares);
 }
 //----------------------------------------------------------------------------
 
